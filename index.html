@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,19 +20,14 @@
       href="./assets/images/favicon.png"
       type="image/x-icon"
     />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/favicon.png"
-      type="image/x-icon"
-    />
-    <title>Logitech</title>
+    <title>Logitech - Zone Vibe 125</title>
   </head>
-  <body class="d-flex flex-column justify-content-between">
-    <header class="d-flex justify-content-center">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand p-3" href="#"
-            ><img id="logo-img" src="./assets/images/Logitech-logo.png" alt=""
+  <body class="d-flex flex-column min-vh-100 justify-content-between">
+    <header class="d-flex justify-content-center w-100">
+      <nav class="navbar navbar-expand-lg w-100">
+        <div class="container-fluid px-3 px-md-4">
+          <a class="navbar-brand py-2" href="index.html"
+            ><img id="logo-img" src="./assets/images/Logitech-logo.png" alt="Logitech Logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -41,44 +36,44 @@
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
-            aria-label="Toggle navigation"
+            aria-label="Abrir menú de navegación"
           >
-            <span><img id="img-menu" src="./assets/images/menu.png" /></span>
+            <span><img id="img-menu" src="./assets/images/menu.png" alt="Menú" /></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
-                  class="nav-link active text-light p-3 p-3"
+                  class="nav-link active text-light px-3 py-2"
                   aria-current="page"
-                  href="#"
+                  href="index.html"
                   >Auriculares</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-light p-3"
+                  class="nav-link text-light px-3 py-2"
                   href="./assets/pages/keyboard.html"
                   >Teclados</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-light p-3"
+                  class="nav-link text-light px-3 py-2"
                   href="./assets/pages/mouse.html"
                   >Ratones</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-light p-3"
+                  class="nav-link text-light px-3 py-2"
                   href="./assets/pages/webcam.html"
                   >Cámaras Web</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-light p-3"
+                  class="nav-link text-light px-3 py-2"
                   href="./assets/pages/contact.html"
                   >Contacto</a
                 >
@@ -89,11 +84,13 @@
       </nav>
     </header>
 
-    <main class="d-flex justify-content-around">
+    <main class="d-flex flex-column flex-lg-row justify-content-between align-items-center flex-grow-1">
       <section class="info-main">
-        <div class="info-text">
+        <div class="info-header">
           <h1 class="animate__animated animate__fadeIn">ZONE VIBE 125</h1>
-          <h4 class=" ">Auriculares inalámbricos ligeros con receptor USB</h4>
+        </div>
+        <div class="info-body">
+          <h4 class="subtitle">Auriculares inalámbricos ligeros con receptor USB</h4>
           <p class="description">
             Haz reuniones con estilo con los auriculares inalámbricos Zone Vibe
             125. Diseñados para tus momentos de trabajo y de ocio e incluyen un
@@ -102,43 +99,47 @@
           </p>
         </div>
         <div class="info-buttons">
+          <a id="buy-now" class="btn-primary-action" href="#">Comprar</a>
           <a
-            class=" "
             id="learn-more"
+            class="btn-secondary-action"
             href="./assets/pages/details/details-headsets.html"
             >Ver más</a
           >
-          <a class=" " id="buy-now" href="">Comprar</a>
         </div>
         <div class="conteiner-numbers">
-          <a class=" " id="active" href="#">01</a>
+          <a id="active" href="#" aria-current="page">01</a>
           <div class="linea"></div>
           <div class="linea2"></div>
 
           <!-- headset -->
-          <a class=" " href="./assets/pages/keyboard.html">02</a>
-          <a class=" " href="./assets/pages/mouse.html">03</a>
-          <a class=" " href="./assets/pages/webcam.html">04</a>
+          <a href="./assets/pages/keyboard.html">02</a>
+          <a href="./assets/pages/mouse.html">03</a>
+          <a href="./assets/pages/webcam.html">04</a>
         </div>
       </section>
       <div class="container-product animate__animated animate__fadeInRight">
         <img
           id="img-product-presentation"
           src="./assets/images/headsets/zone-vibe-125.png"
-          alt=""
+          alt="Auriculares Logitech Zone Vibe 125"
         />
       </div>
     </main>
-    <footer class="d-flex justify-content-center">
+
+    <footer class="d-flex justify-content-center align-items-center">
       <a
         href="https://www.linkedin.com/in/kevin-darnet-99a916228/"
         target="_blank"
-        >Desarrollado por Kevin Darnet →</a
+        rel="noopener noreferrer"
+        >Desarrollado por Kevin Darnet <span aria-hidden="true">→</span></a
       >
       <a
         href="https://www.linkedin.com/in/kevin-darnet-99a916228/"
         target="_blank"
-        ><img class="img-linkedin" src="../images/linkedin.png" alt=""
+        rel="noopener noreferrer"
+        aria-label="Perfil de LinkedIn de Kevin Darnet"
+        ><img class="img-linkedin" src="./assets/images/linkedin.png" alt="LinkedIn"
       /></a>
     </footer>
     <script
